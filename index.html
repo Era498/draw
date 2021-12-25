@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="inputstyle.css" />
+    <title>HW3 SSUI</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <canvas id = "dblcanvas"></canvas>
+    <svg id = "svgc"></svg> 
+    
+    <div class = "buts">
+      <input type="radio" id ='first' onchange="svgx(this)" name="aorb" checked> SVG |
+      <input type="radio" onchange="canc(this)" name="aorb" >  Canvas |
+      <input type="radio" onchange="both(this)" name="aorb"> Both 
+    <p id="test">&nbsp</p>
+    <button onclick="changeToNone()" class="button" id="f1" style="background-color:rgb(255, 255, 255)">None</button>
+    <button onclick="changeToWhite()" class="button" id="f2" style="background-color:rgb(255, 255, 255)"></button>
+    <button onclick="changeToGray()" class="button" id="f3" style="background-color:rgb(155, 148, 148)"></button>
+    <button onclick="changeToBlack()" class="button" id="f4" style="background-color:rgb(0, 0, 0)"></button>
+    <br>
+    <button onclick="changeToYellow()" class="button" id="f5" style="background-color:rgb(231, 231, 60)"></button>
+    <button onclick="changeToRed()" class="button" id="f6"></button>
+    <button onclick="changeToBlue()" class="button" id="f7" style="background-color:rgb(28, 126, 192)"></button>
+    <button onclick="changeToGreen()" class="button" id="f8" style="background-color:rgb(125, 204, 125)"></button>
+    <p>&nbsp</p>
+    <button onclick="drawHelp()" class="button3" id="d" style="background-color:rgb(255, 255, 255)">
+        <img src="assets/line.png" alt="cursor" style="width:40px;height:40px;">
+    </button>
+    <button onclick="rectHelp()" class="rectbut" id = "r" style="background-color:rgb(0, 0, 0)"></button>
+    <button onclick="circHelp()" class="circbut" id = "c" style="background-color:rgb(0, 0, 0)"></button>
+    <button onclick="selHelp()" class="button3" id = "s" style="background-color:rgb(255, 255, 255)">
+    <img src="assets/cursor.png" alt="cursor" style="width:40px;height:40px;">
+    </button>
+    <p>&nbsp</p>
+    <input type="range" min="1" max="100" value="3" class="slider" id="myRange">
+    <p>&nbsp</p>
+    <button onclick="changeLNone()" class="button2" id="l1" style="background-color:rgb(255, 255, 255)">None</button>
+    <button onclick="changeLWhite()" class="button2" id="l2" style="background-color:rgb(255, 255, 255)"></button>
+    <button onclick="changeLGray()" class="button2"  id="l3" style="background-color:rgb(155, 148, 148)"></button>
+    <button onclick="changeLBlack()" class="button2" id="l4" style="background-color:rgb(0, 0, 0)"></button>
+    <br>
+    <button onclick="changeLYellow()" class="button2" id="l5" style="background-color:rgb(231, 231, 60)"></button>
+    <button onclick="changeLRed()" class="button2" id="l6" style="background-color:rgb(255, 0, 0)"></button>
+    <button onclick="changeLBlue()" class="button2" id="l7" style="background-color:rgb(28, 126, 192)"></button>
+    <button onclick="changeLGreen()" class="button2" id="l8" style="background-color:rgb(125, 204, 125)"></button>
+    <br>
+    <button onclick="del()" class="button" id="de" style="background-color:rgb(255, 255, 255)">delete</button>
+    <button onclick="delAll()" class="button" id="dea" style="background-color:rgb(255, 255, 255)">delete all</button>
+    
+    
+    
+    <br>
+  </div> 
+    <script src="input.js"></script>
+  </body>
+</html>
